@@ -1,0 +1,36 @@
+{{!-- WDI7 --}}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+
+<body>
+
+
+{{!-- WDI7 --}}
+	<h1>Welcome!</h1>
+
+	{{#if loggedIn}}
+		You are logged in
+	{{/if}}
+
+	<br>
+
+	My Friends:
+	<br>
+	{{#each friends}}
+		{{this}}<br>
+	{{/each}}
+
+	<br>
+
+	Your name is: {{name}}
+
+
+</body>
+
+</html>
